@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FLASK</title>
+</head>
+
+<body>
+    <h1>First half of favs</h1>
+
+        <div class="row justify-content-center">
+
+            {% for f in Fav_list %}
+    
+            <div class="col-6">
+                <p>{{f.artist1}}</p>
+                <p>{{f.artist2}}</p>
+                <p>{{f.artist3}}</p>
+            </div>
+            {% endfor %}
+</body>
+
+</html>
+
+<!-- - A Home/index route
+- A "Favorite 5" route
+
+Your templates should be dynamic I want to see you guys inserting into your Templates using Jinja and looping through your top 5 items.
+
+Your project should be structured as a package using the __init__.py that we discussed today.
+
+Once you have completed the project, commit the project to github and submit the github link to this assignment. -->
